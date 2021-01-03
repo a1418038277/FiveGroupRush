@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="@dimen/dp_5">
+    <RelativeLayout
+        android:id="@+id/rl_mine_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@mipmap/love"
+            android:layout_marginVertical="@dimen/dp_5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的作业"
+            android:textColor="#433E3E"
+            android:textSize="@dimen/dp_20"
+            android:layout_toRightOf="@+id/img_icon"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/rt_head"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#A8A2A2"
+        app:layout_constraintTop_toBottomOf="@id/rl_mine_item"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginHorizontal="@dimen/dp_10"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

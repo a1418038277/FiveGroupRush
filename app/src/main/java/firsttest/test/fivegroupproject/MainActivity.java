@@ -1,35 +1,64 @@
 package firsttest.test.fivegroupproject;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-/**     
-  * 
-  * @ProjectName:    
-  * @Package:        firsttest.test.fivegroupproject
-  * @ClassName:      MainActivity
-  * @Description:     java类作用描述 
-  * @Author:         zfc
-  * @CreateDate:     2020/12/31 11:42
-  * @UpdateUser:     zfc
-  * @UpdateDate:     2020/12/31 11:42
-  * @UpdateRemark:   更新说明：
-  * @Version:        1.0
- */
-public class MainActivity extends AppCompatActivity {
-    
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import firsttest.test.fivegroupproject.ui.AboutUsActivity;
+import firsttest.test.fivegroupproject.ui.FourPageActivity;
+import firsttest.test.fivegroupproject.ui.LoginActivity;
+import firsttest.test.fivegroupproject.ui.PassWordActivity;
+import firsttest.test.fivegroupproject.ui.VerificationCodeActivity;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    @BindView(R.id.btn_login)
+    Button btnLogin;
+    @BindView(R.id.btn_login_yzm)
+    Button btnLoginYzm;
+    @BindView(R.id.btn_login_pwd)
+    Button btnLoginPwd;
+    @BindView(R.id.btn_login_our)
+    Button btnLoginOur;
+    @BindView(R.id.btn_login_all)
+    Button btnLoginAll;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /**
-         * @method  onCreate
-         * @description 描述一下方法的作用
-         * @date: 2020/12/31 11:43
-         * @author: zfc
-         * @param 
-         * @return void
-         */
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        System.out.println("测试分支");
+        ButterKnife.bind(this);
+        btnLogin.setOnClickListener(this);
+        btnLoginYzm.setOnClickListener(this);
+        btnLoginPwd.setOnClickListener(this);
+        btnLoginOur.setOnClickListener(this);
+        btnLoginAll.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_login:
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
+            case R.id.btn_login_yzm:
+                startActivity(new Intent(this, VerificationCodeActivity.class));
+                break;
+            case R.id.btn_login_pwd:
+                startActivity(new Intent(this, PassWordActivity.class));
+                break;
+            case R.id.btn_login_our:
+                startActivity(new Intent(this, AboutUsActivity.class));
+                break;
+            case R.id.btn_login_all:
+                startActivity(new Intent(this, FourPageActivity.class));
+                break;
+        }
     }
 }

@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import firsttest.test.fivegroupproject.R;
+import firsttest.test.fivegroupproject.course_details.Coursepayment2Activity;
 
 
 public class Coursepayment1Activity extends AppCompatActivity {
@@ -53,7 +54,7 @@ public class Coursepayment1Activity extends AppCompatActivity {
                 btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(Coursepayment1Activity.this, firsttest.test.fivegroupproject.course_Details.Coursepayment2Activity.class));
+                        startActivity(new Intent(Coursepayment1Activity.this, Coursepayment2Activity.class));
                     }
                 });
 

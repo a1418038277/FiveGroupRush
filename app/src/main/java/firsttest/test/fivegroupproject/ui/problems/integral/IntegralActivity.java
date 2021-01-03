@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.integral;
+package firsttest.test.fivegroupproject.ui.problems.integral;
 
 import android.os.Bundle;
 
@@ -13,8 +13,6 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import firsttest.test.fivegroupproject.R;
-import firsttest.test.fivegroupproject.base.BaseAcitvity;
-import firsttest.test.fivegroupproject.interfaces.IBasePresenter;
 
 public class IntegralActivity extends AppCompatActivity {
 

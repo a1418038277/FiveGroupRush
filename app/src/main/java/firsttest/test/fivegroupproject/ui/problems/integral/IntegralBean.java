@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.integral;
+package firsttest.test.fivegroupproject.ui.problems.integral;
 
 public class IntegralBean {
     private String data;

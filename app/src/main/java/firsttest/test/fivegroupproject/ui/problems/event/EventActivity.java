@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.event;
+package firsttest.test.fivegroupproject.ui.problems.event;
 
 import firsttest.test.fivegroupproject.R;
 import firsttest.test.fivegroupproject.base.BaseAcitvity;

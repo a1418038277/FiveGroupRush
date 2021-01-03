@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.campaign;
+package firsttest.test.fivegroupproject.ui.problems.campaign;
 
 import android.content.Intent;
 import android.content.SharedPreferences;

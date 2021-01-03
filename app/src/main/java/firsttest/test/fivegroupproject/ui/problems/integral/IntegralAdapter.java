@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.integral;
+package firsttest.test.fivegroupproject.ui.problems.integral;
 
 import android.content.Context;
 import android.widget.TextView;

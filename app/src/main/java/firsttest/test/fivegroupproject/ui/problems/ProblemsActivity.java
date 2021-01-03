@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.problems;
+package firsttest.test.fivegroupproject.ui.problems;
 
 import android.os.Bundle;
 import android.widget.ExpandableListView;

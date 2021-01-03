@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.course_details;
+package firsttest.test.fivegroupproject.ui.problems.course_details;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;

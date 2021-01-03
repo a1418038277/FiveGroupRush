@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import firsttest.test.fivegroupproject.R;
-import firsttest.test.fivegroupproject.course_details.Coursepayment2Activity;
+import firsttest.test.fivegroupproject.ui.problems.course_details.Coursepayment2Activity;
 
 
 public class Coursepayment1Activity extends AppCompatActivity {

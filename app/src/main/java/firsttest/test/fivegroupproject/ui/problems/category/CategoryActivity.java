@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.category;
+package firsttest.test.fivegroupproject.ui.problems.category;
 
 import android.app.AppComponentFactory;
 import android.os.Bundle;

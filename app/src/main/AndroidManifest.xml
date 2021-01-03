@@ -14,12 +14,41 @@
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".wyl.reserve.ReserveActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".wyl.course.CourseFigureActivity">
+
+        </activity>
+        <activity android:name=".wyl.news.NewsActivity">
+
+        </activity>
+        <!--课程-->
+        <activity android:name=".wyl.curriculum.CurriculumActivity">
+
+        </activity>
+        <!--登录-->
+        <activity android:name=".wyl.login.LoginActivity">
+
+
+        </activity>
+        <!--购买-->
+        <activity android:name=".wyl.GoodsActivity">
+
+        </activity>
+        <!--家长专区-->
+        <activity android:name=".wyl.parent.ParentActivity">
+
+        </activity>
+        <!--日历-->
+        <activity android:name=".wyl.CalendarActivity">
+
+        </activity>
+        <activity android:name=".MainActivity">
         </activity>
     </application>
 

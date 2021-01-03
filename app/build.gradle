@@ -55,4 +55,5 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.1.1'//eventbus发送消息
     implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.haibin:calendarview:3.2.9'
 }

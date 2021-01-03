@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/aboutme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:text="面对疾风吧申请使用"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintLeft_toRightOf="@id/iv_icon" />
+
+    <TextView
+        android:layout_width="@dimen/dp_340"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="你的微信头像、昵称、地区和性别信息"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_23"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_switch"
+        android:layout_height="wrap_content"
+        android:text="你可以选择不同的个人信息登录"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
+        android:layout_marginTop="@dimen/dp_120"
+        app:layout_constraintLeft_toLeftOf="@id/iv_icon"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_people"
+        app:layout_constraintTop_toBottomOf="@id/tv_switch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+    <Button
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:id="@+id/btn_login"
+        android:text="同意"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rl_people"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/dp_50"/>
+    <Button
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:background="@color/parentActivity"
+        android:text="拒绝"
+        android:textColor="@color/green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btn_back"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

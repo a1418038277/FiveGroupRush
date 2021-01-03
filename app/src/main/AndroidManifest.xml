@@ -12,36 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.problems.ProblemsActivity">
-
-        </activity>
-        <activity android:name=".base.BaseAcitvity"/>
-        <activity android:name=".ui.problems.category.CategoryActivity">
-
-        </activity>
-        <activity android:name=".ui.problems.campaign.CampaignActivity">
-        </activity>
-        <activity android:name=".ui.problems.integral.IntegralActivity">
-
-        </activity>
-        <activity android:name=".ui.problems.course_details.Coursepayment2Activity">
-        </activity>
-        <activity android:name=".ui.problems.event.EventActivity">
-
-        </activity>
-        <activity android:name=".ui.problems.course_details.Coursepayment1Activity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.problems.rec.RecMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.problems.ProblemsActivity"></activity>
+        <activity android:name=".base.BaseAcitvity" />
+        <activity android:name=".ui.problems.category.CategoryActivity"></activity>
+        <activity android:name=".ui.problems.campaign.CampaignActivity"></activity>
+        <activity android:name=".ui.problems.integral.IntegralActivity"></activity>
+        <activity android:name=".ui.problems.course_details.Coursepayment2Activity"></activity>
+        <activity android:name=".ui.problems.event.EventActivity"></activity>
+        <activity android:name=".ui.problems.course_details.Coursepayment1Activity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

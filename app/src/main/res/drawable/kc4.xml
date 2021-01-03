@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+android:radius 四个角半径值
+android:topLeftRadius左上角半径值
+android:topRightRadius右上角半径值
+android:bottomLeftRadius右下角半径值
+android:bottomRightRadius左下角半径值
+-->
+    <corners
+        android:radius="@dimen/dp_180"/>
+    <!--
+     android:width="20dp":描边的宽度
+     android:color="#fff"：描边的颜色
+     android:dashGap="1dp"：虚线的间隔
+     android:dashWidth="10dp"：虚线的宽度，为0时为实线
+ -->
+    <solid android:color="#FFFFFF"/>
+
+</shape>

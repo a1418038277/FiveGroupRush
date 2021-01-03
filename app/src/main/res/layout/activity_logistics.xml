@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".logistics.LogisticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="物流详情"
+            android:textColor="#000000"
+            android:textSize="@dimen/dp_21" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号:23233123" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="快递单号:123456" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--左边 时间-->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="02-02 12:01:18"
+            android:textColor="#6D6D6E"
+            android:textSize="16sp" />
+        <!--中间 时间轴-->
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="35dp"
+            android:layout_height="86dp">
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/wuliu1"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/iv_status"
+                android:layout_centerHorizontal="true"
+                android:src="#dddddd" />
+        </RelativeLayout>
+
+        <!--右边 信息-->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:autoLink="email|phone|web"
+            android:text="已签收:您的订单已签收,感谢您的信任,欢迎下次光临"
+            android:textColor="#6D6D6E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:background="#9b9b9b"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--左边 时间-->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="02-02 12:01:02"
+            android:textColor="#6D6D6E"
+            android:textSize="16sp" />
+        <!--中间 时间轴-->
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="86dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/wuliu1" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wuliu1"
+                android:src="#dddddd" />
+        </RelativeLayout>
+
+        <!--右边 信息-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:autoLink="email|phone|web"
+            android:text="配送中:正在派送途中,请您准备签收(派件人:张小建,电话:18513394441)"
+            android:textColor="#6D6D6E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_time"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:background="#9b9b9b"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--左边 时间-->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="02-03 01:02:50"
+            android:textColor="#6D6D6E"
+            android:textSize="16sp" />
+        <!--中间 时间轴-->
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="86dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/wuliu1"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+
+                android:layout_centerInParent="true"
+                android:src="#dddddd" />
+        </RelativeLayout>
+
+        <!--右边 信息-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:autoLink="email|phone|web"
+            android:text="您的商品已在[上海总分拨中心]完成扫描,并发往下一站"
+            android:textColor="#6D6D6E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_time"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:background="#9b9b9b"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--左边 时间-->
+        <TextView
+            android:id="@+id/tv_time3"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="02-02 12:01:20"
+            android:textColor="#6D6D6E"
+            android:textSize="16sp" />
+        <!--中间 时间轴-->
+        <RelativeLayout
+            android:id="@+id/rl_left3"
+            android:layout_width="35dp"
+            android:layout_height="86dp">
+
+            <ImageView
+                android:id="@+id/iv_status3"
+                android:layout_width="20dp"
+                android:background="@drawable/wuliu1"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/iv_line3"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/iv_status3"
+                android:layout_centerInParent="true"
+                android:src="#dddddd" />
+        </RelativeLayout>
+
+        <!--右边 信息-->
+        <TextView
+            android:id="@+id/tv_status3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:autoLink="email|phone|web"
+            android:text="已揽件(包裹已揽收,到达[上海静安物流中心])"
+            android:textColor="#6D6D6E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_time"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:background="#9b9b9b"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--左边 时间-->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="02-01 08:02:18"
+            android:textColor="#6D6D6E"
+            android:textSize="16sp" />
+        <!--中间 时间轴-->
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="86dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/wuliu1"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="#dddddd" />
+        </RelativeLayout>
+
+        <!--右边 信息-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:autoLink="email|phone|web"
+            android:text="确认成功,仓库准备出库"
+            android:textColor="#6D6D6E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:background="#9b9b9b"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--左边 时间-->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="02-01 08:02:18"
+            android:textColor="#6D6D6E"
+            android:textSize="16sp" />
+        <!--中间 时间轴-->
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="86dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/wuliu1"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="#dddddd" />
+        </RelativeLayout>
+
+        <!--右边 信息-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:autoLink="email|phone|web"
+            android:text="您提交了订单"
+            android:textColor="#6D6D6E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rl_left"
+            android:background="#9b9b9b"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

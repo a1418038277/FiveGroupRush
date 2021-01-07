@@ -1,19 +1,21 @@
 package firsttest.test.fivegroupproject.ui;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import firsttest.test.fivegroupproject.R;
 
-public class AboutUsActivity extends AppCompatActivity {
+public class AboutUsActivity extends AppCompatActivity implements View.OnClickListener {
 
+    @BindView(R.id.about_back)
+    ImageView aboutBack;
     private TextView call_ourLt, clean_dataLt, feedbackLt, out_loginLt;
     private ImageView call_ourRt, clean_dataRt, feedbackRt, out_loginRt;
     @BindView(R.id.call_our)
@@ -45,5 +47,16 @@ public class AboutUsActivity extends AppCompatActivity {
         clean_dataLt.setText("清除缓存");
         feedbackLt.setText("意见反馈");
         out_loginLt.setText("退出登录");
+
+        aboutBack.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.about_back:
+                finish();
+                break;
+        }
     }
 }

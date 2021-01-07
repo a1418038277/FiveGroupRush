@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.MineFragment"
     android:orientation="vertical"
-    android:background="#EDF6F5">
+    android:background="@color/colorGray">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -64,7 +64,7 @@
             android:background="@drawable/shape_mine"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_88"
-            android:layout_marginHorizontal="@dimen/dp_8">
+            android:layout_marginHorizontal="@dimen/dp_18">
 
             <ImageView
                 android:id="@+id/img_bi"
@@ -95,8 +95,8 @@
                 android:layout_alignBottom="@id/bi_count"
                 android:layout_marginLeft="@dimen/dp_6"/>
             <Button
-                android:layout_width="@dimen/dp_100"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_26"
                 android:text="查看更多"
                 android:background="@drawable/shape_mine_more"
                 android:layout_alignParentRight="true"
@@ -107,7 +107,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:background="@drawable/shape_mine_else"
-            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginHorizontal="@dimen/dp_18"
             android:layout_marginVertical="@dimen/dp_22"
             android:layout_height="@dimen/dp_100"
             android:orientation="horizontal">
@@ -169,13 +169,13 @@
             android:layout_height="match_parent"
             android:background="#fff"
             android:orientation="vertical">
+            <include android:id="@+id/mine1" layout="@layout/layout_mine_bootom" />
+            <include android:id="@+id/mine2" layout="@layout/layout_mine_bootom" />
+            <include android:id="@+id/mine3" layout="@layout/layout_mine_bootom" />
+            <include android:id="@+id/mine4" layout="@layout/layout_mine_bootom" />
+            <include android:id="@+id/mine5" layout="@layout/layout_mine_bootom" />
+            <include android:id="@+id/mine6" layout="@layout/layout_mine_bootom" />
 
-            <include layout="@layout/layout_mine_bootom" />
-
-            <include layout="@layout/layout_mine_bootom" />
-            <include layout="@layout/layout_mine_bootom" />
-            <include layout="@layout/layout_mine_bootom" />
-            <include layout="@layout/layout_mine_bootom" />
         </LinearLayout>
     </LinearLayout>
 

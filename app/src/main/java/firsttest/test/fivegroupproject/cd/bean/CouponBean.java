@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject.bean;
+package firsttest.test.fivegroupproject.cd.bean;
 
 public class CouponBean {
     private String title1;

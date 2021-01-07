@@ -1,17 +1,15 @@
-package firsttest.test.fivegroupproject.fragment;
+package firsttest.test.fivegroupproject.cd.fragment;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import firsttest.test.fivegroupproject.R;
-import firsttest.test.fivegroupproject.adapter.CouponAdapter;
+import firsttest.test.fivegroupproject.cd.adapter.CouponAdapter;
 import firsttest.test.fivegroupproject.base.BaseFragment;
-import firsttest.test.fivegroupproject.base.BasePresenter;
 import firsttest.test.fivegroupproject.bean.CouponBean;
 import firsttest.test.fivegroupproject.interfaces.IBasePresenter;
 

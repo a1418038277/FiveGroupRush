@@ -1,5 +1,6 @@
-package firsttest.test.fivegroupproject;
+package firsttest.test.fivegroupproject.cd;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -13,9 +14,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import firsttest.test.fivegroupproject.R;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -40,13 +44,13 @@ public class Main2Activity extends AppCompatActivity {
 
     private void initView() {
         View view = LayoutInflater.from(this).inflate(R.layout.privacy_item, null);
-        PopupWindow popupWindow = new PopupWindow(view, 800, ViewGroup.LayoutParams.WRAP_CONTENT);
+        PopupWindow popupWindow = new PopupWindow(view, 900, ViewGroup.LayoutParams.WRAP_CONTENT);
         popupWindow.setBackgroundDrawable(new ColorDrawable());
         popupWindow.setTouchable(true);
 
-        mTextTv = view.findViewById(R.id.tv_text);
+        mTextTv = view.findViewById(R.id.tv_text3_a);
         //富文本
-        SpannableString spannableString = new SpannableString("您可阅读《用户协议和隐私政策》了解详细信息。如您同意,请点击同意开始接受我们的服务。" );
+        SpannableString spannableString = new SpannableString("您可阅读《用户协议和隐私政策》了解详细" );
         spannableString.setSpan(new ForegroundColorSpan(Color.BLUE),
                 4, 15, Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
         mTextTv.setText(spannableString);
@@ -55,11 +59,20 @@ public class Main2Activity extends AppCompatActivity {
         mDisagreeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                popupWindow.dismiss();
+                Toast.makeText(Main2Activity.this, "需要点击同意以后进入应用", Toast.LENGTH_SHORT).show();
             }
         });
-        mConsentBtn = view.findViewById(R.id.btn_consent);
 
+        mConsentBtn = view.findViewById(R.id.btn_consent);
+        mConsentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //记得修改跳转的页面
+                Intent intent = new Intent(Main2Activity.this, ProActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
 
     }

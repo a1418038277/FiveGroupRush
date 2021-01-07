@@ -1,6 +1,5 @@
-package firsttest.test.fivegroupproject;
+package firsttest.test.fivegroupproject.cd;
 
-import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,7 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import firsttest.test.fivegroupproject.adapter.TabVpRelAdapter;
+import firsttest.test.fivegroupproject.R;
+import firsttest.test.fivegroupproject.cd.adapter.TabVpRelAdapter;
 import firsttest.test.fivegroupproject.base.BaseAcitvity;
 import firsttest.test.fivegroupproject.fragment.CouponFragment;
 import firsttest.test.fivegroupproject.interfaces.IBasePresenter;

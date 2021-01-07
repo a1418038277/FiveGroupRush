@@ -1,7 +1,6 @@
-package firsttest.test.fivegroupproject.adapter;
+package firsttest.test.fivegroupproject.cd.adapter;
 
 import android.content.Context;
-import android.view.View;
 
 import android.widget.RelativeLayout;
 

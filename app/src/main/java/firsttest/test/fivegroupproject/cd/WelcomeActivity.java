@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject;
+package firsttest.test.fivegroupproject.cd;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,10 +15,11 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import firsttest.test.fivegroupproject.R;
 import firsttest.test.fivegroupproject.base.BaseAcitvity;
 import firsttest.test.fivegroupproject.interfaces.IBasePresenter;
 
-public class MainActivity extends BaseAcitvity {
+public class WelcomeActivity extends BaseAcitvity {
 
     @BindView(R.id.viewpager)
     ViewPager viewpager;
@@ -26,7 +27,7 @@ public class MainActivity extends BaseAcitvity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.activity_welcome;
     }
 
     @Override
@@ -49,7 +50,7 @@ public class MainActivity extends BaseAcitvity {
             @NonNull
             @Override
             public Object instantiateItem(@NonNull ViewGroup container, int position) {
-                View inflate = LayoutInflater.from(MainActivity.this).inflate(R.layout.vp_item, null);
+                View inflate = LayoutInflater.from(WelcomeActivity.this).inflate(R.layout.vp_item, null);
                 ImageView img = inflate.findViewById(R.id.img);
                 img.setImageResource(integers.get(position));
                 View btnJump = inflate.findViewById(R.id.btn_jump);
@@ -58,7 +59,7 @@ public class MainActivity extends BaseAcitvity {
                     btnJump.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                            Intent intent = new Intent(WelcomeActivity.this, Main2Activity.class);
                             startActivity(intent);
                         }
                     });

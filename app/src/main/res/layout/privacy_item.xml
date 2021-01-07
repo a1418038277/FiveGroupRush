@@ -2,60 +2,135 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="700dp"
+    android:gravity="center"
    android:orientation="vertical"
     android:background="@drawable/shaap_privacy">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="@dimen/dp_35"
+    android:layout_height="@dimen/dp_422"
+    android:layout_margin="@dimen/dp_15"
+
    >
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="服务协议和隐私政策"
-        android:textSize="@dimen/dp_20"
+        android:textSize="@dimen/dp_17"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_text1"
+        android:textColor="@color/black"
+        android:id="@+id/tv_text1_a"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_20"
-        android:text="欢迎使用季风音乐在线教育
-        服务,在使用季风音乐之前请您仔细阅读本
-        用户协议。季风音乐感谢您的支持和信任!"
+        android:layout_marginTop="@dimen/dp_18"
+        android:text="欢迎使用季风音乐在线教育服务，在使用季"
         app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
     <TextView
-        android:id="@+id/tv_text2"
+        android:gravity="center"
+        android:id="@+id/tv_text1_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="欢迎使用季风音乐在线教育服务,
-        XXXXXXXXX。季风音乐感谢您的支持和信任欢迎
-        使用季风音乐在线教育服务,xxx季风音乐感
-        谢您的支持和信任!"
-        app:layout_constraintTop_toBottomOf="@id/tv_text1" />
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:text="风音乐之前请您仔细阅读本用户协议。季风"
+        app:layout_constraintTop_toBottomOf="@id/tv_text1_a" />
 
     <TextView
+        android:layout_marginLeft="@dimen/dp_5"
+        android:id="@+id/tv_text1_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:text="音乐感谢您的支持和信任!"
+        app:layout_constraintTop_toBottomOf="@id/tv_text1_b" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_text2_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用季风音乐在线教育服务，xxxxxxxx"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_text1_c" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_text2_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="季风音乐感谢您的支持和信任欢迎使用季风"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_text2_a" />
+    <TextView
+        android:gravity="center"
         android:id="@+id/tv_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@id/tv_text2" />
+        android:text="音乐在线教育服务,xxxxxxxx季风音乐感谢您"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_text2_b" />
 
+    <TextView
+        android:id="@+id/tv_text2_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="的支持和信任!"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_text" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_text3_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_8"
+
+       app:layout_constraintTop_toBottomOf="@id/tv_text2_c" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_text3_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:text="信息。如您同意，请点击同意开始接受我们"
+        app:layout_constraintTop_toBottomOf="@id/tv_text3_a" />
+    <TextView
+        android:id="@+id/tv_text3_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/black"
+        android:text="的服务。"
+        android:layout_marginLeft="@dimen/dp_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_text3_b" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_70"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/tv_text">
+        app:layout_constraintTop_toBottomOf="@id/tv_text3_b">
         <Button
-            android:layout_width="@dimen/dp_80"
-            android:layout_height="@dimen/dp_40"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_35"
             android:text="不同意"
+            android:stateListAnimator="@null"
+            android:textSize="@dimen/dp_15"
             android:textColor="@color/orange"
             android:background="@drawable/shape2"
             android:id="@+id/btn_disagree"/>
@@ -63,9 +138,10 @@
             android:layout_width="@dimen/dp_50"
             android:layout_height="wrap_content"/>
         <Button
-            android:layout_width="@dimen/dp_80"
-            android:layout_height="@dimen/dp_40"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_35"
             android:text="同意"
+            android:stateListAnimator="@null"
             android:textColor="@color/white"
             android:background="@drawable/shape"
             android:id="@+id/btn_consent"/>

@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject;
+package firsttest.test.fivegroupproject.cd;
 
 import android.content.Context;
 import android.graphics.Canvas;

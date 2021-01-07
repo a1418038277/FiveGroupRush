@@ -1,14 +1,10 @@
-package firsttest.test.fivegroupproject.adapter;
-
-import android.content.Context;
-import android.view.View;
+package firsttest.test.fivegroupproject.cd.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
 

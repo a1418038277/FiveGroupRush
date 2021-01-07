@@ -18,20 +18,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ServiceActivity">
+        <activity android:name=".cd.ServiceActivity">
+
+        </activity>
+        <activity android:name=".cd.DiscountActivity">
+
+        </activity>
+        <activity android:name=".cd.ProActivity">
+
+        </activity>
+        <activity android:name=".cd.TelActivity">
+
+        </activity>
+        <activity android:name=".cd.Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DiscountActivity">
-
-        </activity>
-        <activity android:name=".ProActivity"></activity>
-        <activity android:name=".TelActivity"></activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

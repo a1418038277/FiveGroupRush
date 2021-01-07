@@ -1,4 +1,4 @@
-package firsttest.test.fivegroupproject;
+package firsttest.test.fivegroupproject.cd;
 
 import android.Manifest;
 import android.content.Intent;
@@ -19,11 +19,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.github.dfqin.grantor.PermissionListener;
 import com.github.dfqin.grantor.PermissionsUtil;
 
-import java.security.Permissions;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import firsttest.test.fivegroupproject.R;
 
 public class TelActivity extends AppCompatActivity {
 
@@ -54,7 +53,7 @@ public class TelActivity extends AppCompatActivity {
     @OnClick(R.id.btn_tel)
     public void onViewClicked() {
         View view = LayoutInflater.from(this).inflate(R.layout.tle_item, null);
-        PopupWindow popupWindow = new PopupWindow(view, 900, ViewGroup.LayoutParams.WRAP_CONTENT);
+        PopupWindow popupWindow = new PopupWindow(view, 1000, ViewGroup.LayoutParams.WRAP_CONTENT);
         popupWindow.setTouchable(true);
         popupWindow.setBackgroundDrawable(new ColorDrawable());
         mCancleBtn =view.findViewById(R.id.btn_cancle);

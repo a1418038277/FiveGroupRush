@@ -15,9 +15,7 @@ android:bottomRightRadius左下角半径值
      android:dashGap="1dp"：虚线的间隔
      android:dashWidth="10dp"：虚线的宽度，为0时为实线
  -->
-    <stroke
-        android:width="@dimen/dp_1"
-        />
-    <solid android:color="#E4E4E4"/>
+
+    <solid android:color="#F3F3F3"/>
 
 </shape>

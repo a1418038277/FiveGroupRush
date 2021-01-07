@@ -17,8 +17,8 @@ android:bottomRightRadius左下角半径值
  -->
     <stroke
         android:color="#FF5722"
-        android:width="@dimen/dp_4"
+        android:width="@dimen/dp_1_5"
         />
-    <solid android:color="#F6D6CC"/>
+    <solid android:color="#FFFAF0"/>
 
 </shape>

@@ -9,20 +9,38 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
-import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import firsttest.test.fivegroupproject.R;
 import firsttest.test.fivegroupproject.base.BaseAcitvity;
+import firsttest.test.fivegroupproject.base.BaseAdapter;
 import firsttest.test.fivegroupproject.interfaces.IBasePresenter;
 
 /*
-* 一对一课程
-* */
+ * 预约一对一课程
+ * */
 public class CourseFigureActivity extends BaseAcitvity {
-    @BindView(R.id.tv_look)
-    TextView tvLook;
+
+    @BindView(R.id.layout_search)
+    ConstraintLayout layoutSearch;
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+    @BindView(R.id.vp_show)
+    ViewPager vpShow;
 
     @Override
     protected int getLayout() {
@@ -36,47 +54,33 @@ public class CourseFigureActivity extends BaseAcitvity {
 
     @Override
     protected void initView() {
-        tvLook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                initPop();
-            }
-        });
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new OneByOneFragment());
+        fragments.add(new OneByOneFragment());
+        fragments.add(new OneByOneFragment());
+        vpShow.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+                              @NonNull
+                              @Override
+                              public Fragment getItem(int position) {
+                                  return fragments.get(position);
+                              }
+
+                              @Override
+                              public int getCount() {
+                                  return fragments.size();
+                              }
+                          });
+        tabLayout.setupWithViewPager(vpShow);
+        tabLayout.getTabAt(0).setText("综合排序");
+        tabLayout.getTabAt(1).setText("级别排序");
+        tabLayout.getTabAt(2).setText("收藏排序");
     }
 
-    private void initPop() {
-        View inflate = LayoutInflater.from(this).inflate(R.layout.pop_item, null);
-        ImageView ivpoppic = inflate.findViewById(R.id.iv_pop_pic);
-        PopupWindow popupWindow = new PopupWindow(inflate, ViewGroup.LayoutParams.MATCH_PARENT,1650);
-        //设置阴影
-        popupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
-            @Override
-            public void onDismiss() {
-                WindowManager.LayoutParams attributes = getWindow().getAttributes();
-                attributes.alpha = 1f;
-                getWindow().setAttributes(attributes);
-            }
-        });
 
-        ivpoppic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                popupWindow.dismiss();
-            }
-        });
-
-        popupWindow.showAtLocation(inflate, Gravity.BOTTOM,0,0);
-
-        //关闭阴影
-        WindowManager.LayoutParams attributes = getWindow().getAttributes();
-        attributes.alpha = 0.3f;
-        getWindow().setAttributes(attributes);
-    }
 
     @Override
     protected void initData() {
 
     }
-
 
 }

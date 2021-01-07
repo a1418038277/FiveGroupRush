@@ -1,6 +1,12 @@
 package firsttest.test.fivegroupproject.wyl.news;
 
 import android.content.Context;
+import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
@@ -19,6 +25,7 @@ public class NewAdapter extends BaseAdapter {
 
     @Override
     protected void bindData(Object data, VH vh) {
-
+        ImageView ivHead = (ImageView) vh.getViewById(R.id.iv_head);
+        Glide.with(context).load(R.drawable.fd121).apply(new RequestOptions().circleCrop()).into(ivHead);
     }
 }

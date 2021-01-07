@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="关闭"
         android:textColor="@color/black"
-        android:textSize="@dimen/sp_20"
+        android:textSize="@dimen/sp_16"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,6 +35,7 @@
         app:layout_constraintLeft_toRightOf="@id/iv_icon" />
 
     <TextView
+        android:id="@+id/tv_explain"
         android:layout_width="@dimen/dp_340"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_20"
@@ -58,7 +59,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/parentActivity"
         android:id="@+id/rl_people"
+        android:layout_marginRight="@dimen/dp_20"
         app:layout_constraintTop_toBottomOf="@id/tv_switch"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="@dimen/dp_20"
@@ -67,7 +70,7 @@
     <Button
         android:layout_width="@dimen/dp_150"
         android:layout_height="wrap_content"
-        android:background="@color/green"
+        android:background="@drawable/login_agree"
         android:id="@+id/btn_login"
         android:text="同意"
         android:textColor="@color/white"
@@ -79,14 +82,13 @@
     <Button
         android:layout_width="@dimen/dp_150"
         android:layout_height="wrap_content"
-        android:background="@color/parentActivity"
+        android:background="@drawable/login_refuse"
         android:text="拒绝"
         android:textColor="@color/green"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btn_login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/btn_back"
-        android:layout_marginTop="@dimen/dp_5"/>
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/btn_back"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

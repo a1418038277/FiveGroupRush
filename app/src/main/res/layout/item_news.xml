@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/parentActivity"
+    android:layout_marginTop="@dimen/dp_5"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
         android:layout_width="match_parent"
@@ -21,8 +22,7 @@
         <ImageView
             android:layout_width="@dimen/dp_50"
             android:layout_height="@dimen/dp_50"
-            android:src="@drawable/fd121"
-            android:scaleType="centerCrop"/>
+            android:id="@+id/iv_head"/>
         <TextView
             android:layout_width="@dimen/dp_250"
             android:layout_height="wrap_content"

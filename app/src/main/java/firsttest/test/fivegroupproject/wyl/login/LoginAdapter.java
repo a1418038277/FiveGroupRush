@@ -13,13 +13,28 @@ import firsttest.test.fivegroupproject.R;
 import firsttest.test.fivegroupproject.base.BaseAdapter;
 
 public class LoginAdapter extends BaseAdapter {
+    private static final int USER_ITEM = 0;
+    private static final int USER_DEFAULT = 1;
+
+    @Override
+    public int getItemViewType(int position) {
+        if (position == mData.size() - 1){
+            return USER_DEFAULT;
+        }
+        return USER_ITEM;
+    }
+
     public LoginAdapter(Context context, List data) {
         super(context, data);
     }
 
     @Override
     protected int getLayout(int type) {
-        return R.layout.item_login;
+        if (type == USER_ITEM) {
+            return R.layout.item_login;
+        }else{
+            return R.layout.item_login_default;
+        }
     }
 
     @Override

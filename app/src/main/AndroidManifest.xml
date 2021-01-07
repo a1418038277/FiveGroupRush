@@ -15,14 +15,14 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity android:name=".wyl.reserve.ReserveActivity">
+
+        </activity>
+        <activity android:name=".wyl.course.CourseFigureActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".wyl.course.CourseFigureActivity">
-
         </activity>
         <activity android:name=".wyl.news.NewsActivity">
 
@@ -33,7 +33,6 @@
         </activity>
         <!--登录-->
         <activity android:name=".wyl.login.LoginActivity">
-
 
         </activity>
         <!--购买-->

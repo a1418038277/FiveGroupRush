@@ -14,7 +14,7 @@ import java.util.List;
 
 public abstract class BaseAdapter<D> extends RecyclerView.Adapter {
 
-    List<D> mData; //adapter的数据
+    protected List<D> mData; //adapter的数据
     protected Context context;
     protected IListClick click;
     protected Activity activity;
